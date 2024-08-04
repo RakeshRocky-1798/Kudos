@@ -1,0 +1,59 @@
+.select-box {
+  width: 100%;
+  min-height: 38.5px;
+  height: fit-content;
+  z-index: 100000000000000;
+  margin-top: 3px;
+  margin-bottom: 2vh;
+
+  span {
+    top: 42%;
+  }
+}
+
+.give-kleos-button {
+  margin-top: 25px;
+  margin-bottom: 10px;
+
+  button {
+    min-width: 140px;
+  }
+}
+
+.send-slack {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.send-slack-btn {
+  display: flex;
+  width: 32px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+.info-div {
+  display: flex;
+  width: 360px;
+  padding: 4px 8px;
+  align-items: center;
+  gap: 4px;
+  border-radius: 4px;
+  background: var(--navi-color-gray-bg-secondary);
+}
+
+.info-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.form-element {
+  width: '10%';
+  color: '#969696';
+  font-weight: '400';
+}

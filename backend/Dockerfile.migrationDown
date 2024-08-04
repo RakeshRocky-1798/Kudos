@@ -1,0 +1,22 @@
+Dockerfile.migrationUp#ARG GOLANG_TAG=193044292705.dkr.ecr.ap-south-1.amazonaws.com/common/golang:1.19
+
+# To run locally, use
+ARG GOLANG_TAG=registry.cmd.navi-tech.in/common/golang:1.19
+
+FROM ${GOLANG_TAG} as builder
+
+ARG DSN
+ENV POSTGRES_DSN $DSN
+
+RUN curl -L https://packagecloud.io/golang-migrate/migrate/gpgkey | apt-key add -
+RUN echo "deb https://packagecloud.io/golang-migrate/migrate/ubuntu/ bionic main" > /etc/apt/sources.list.d/migrate.list
+RUN apt-get update
+RUN apt-get install -y migrate
+
+RUN mkdir -p /build
+WORKDIR /build
+
+COPY ./db_migration /build/db_migration
+COPY ./Makefile /build
+
+CMD /bin/bash -c "make migration-down POSTGRES_DSN=${POSTGRES_DSN}"

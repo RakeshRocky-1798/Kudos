@@ -1,0 +1,26 @@
+.centeredContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.centeredContent {
+  padding-top: 20vh;
+  text-align: center;
+}
+
+.navigateToHome {
+  font-size: 25px;
+  text-decoration: underline;
+  cursor: pointer;
+  color: blue;
+  &:hover {
+    background-color: lightblue;
+  }
+}
+
+.errorBound {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}

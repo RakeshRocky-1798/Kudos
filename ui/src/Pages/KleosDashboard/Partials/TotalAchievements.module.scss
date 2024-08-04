@@ -1,0 +1,100 @@
+.totalAchievementsTypo {
+  margin-top: 10px;
+  color: var(--Grayscale-Content-3, #969696);
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.typoWrapper {
+  color: var(--Grayscale-Content-3, #969696);
+  font-size: 150px;
+  text-align: center;
+}
+
+.pie-container {
+  width: 188px;
+  margin: 0 auto;
+}
+
+.pieChartWrapper {
+  width: inherit;
+}
+
+.labelWrapper {
+  flex: 0 0 100px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.legends-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.legend-top,
+.legend-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.legend-item {
+  margin-left: 13px;
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  justify-content: left;
+  text-align: left;
+}
+
+.legWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.legend-color2 {
+  width: 7px;
+  height: 14px;
+  border-radius: 2px;
+  margin-right: 12px;
+}
+
+.legend-value {
+  flex: 3;
+  color: var(--grayscale-content-1, var(--navi-color-gray-c1));
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.legend-label {
+  margin-top: 6px;
+  text-align: left;
+  justify-content: left;
+  color: var(--grayscale-content-2, var(--navi-color-gray-c2));
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.imageWrap {
+  display: flex;
+  align-items: center;
+  gap: 0 6px;
+  fill: #ffffff;
+  opacity: 0.7;
+  margin-left: 10%;
+}
+
+@media screen and (max-height: 678px) {
+  .pie-container {
+    width: 85%;
+    margin: 0 auto;
+  }
+}

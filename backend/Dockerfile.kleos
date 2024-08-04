@@ -1,0 +1,24 @@
+#ARG GOLANG_TAG=193044292705.dkr.ecr.ap-south-1.amazonaws.com/common/golang:1.19
+
+# To run locally, use
+ARG GOLANG_TAG=registry.cmd.navi-tech.in/common/golang:1.19
+
+
+FROM ${GOLANG_TAG} as builder
+
+RUN mkdir -p /build
+WORKDIR /build
+COPY . /build
+RUN /bin/bash -c "make build"
+
+FROM ${GOLANG_TAG}
+RUN mkdir -p /usr/local
+WORKDIR /usr/local
+RUN mkdir -p kelosTemp
+COPY --from=0 /build/kleos /usr/local/
+COPY --from=0 /build/config/logger_config/application.properties /usr/local/config/logger_config/
+COPY --from=0 /build/db_migration/migrations/*.sql /usr/local/db_migration/migrations/
+RUN adduser --system --uid 4000 --disabled-password app-user && chown -R 4000:4000 /usr/local && chmod -R g+w /usr/local/
+USER 4000
+
+CMD /bin/bash -c "./kleos"

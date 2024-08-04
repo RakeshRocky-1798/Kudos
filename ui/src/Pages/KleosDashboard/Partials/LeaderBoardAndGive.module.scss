@@ -1,0 +1,51 @@
+.leaderboard-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.give-kleos-wrapper {
+  padding-bottom: 26px;
+}
+
+.leader-board-table-header {
+  margin-bottom: 16px;
+}
+
+.leader-board-team-meta {
+  display: flex;
+  align-items: center;
+  gap: 0 8px;
+}
+
+.empty-leader-board {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(202, 202, 202, 0.25);
+  backdrop-filter: blur(10px);
+  height: calc(100vh - 32vh);
+  border-radius: 12px;
+
+  &--msg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.leader-board-user {
+  color: var(--navi-color-gray-c2);
+}
+
+.logged-in-user {
+  color: var(--navi-color-blue-dark) !important;
+  font-weight: 600 !important;
+
+  & > * {
+    color: var(--navi-color-blue-dark) !important;
+    font-weight: 600 !important;
+  }
+}

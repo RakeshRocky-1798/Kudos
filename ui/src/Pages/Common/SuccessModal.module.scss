@@ -1,0 +1,50 @@
+.lottieModal {
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: var(--Grayscale-Background-Secondary, #f7f7f7);
+}
+
+.hurray {
+  margin-top: 4vh;
+  color: var(--grayscale-content-1, #1c1c1c);
+  font-size: 30px;
+  margin-bottom: 1vh;
+  display: flex;
+  justify-content: center;
+}
+
+.kudDesc {
+  margin-top: 1vh;
+  margin-bottom: 3vh;
+  color: var(--navigation-blue-navigation-border, #475266);
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.counter {
+  margin-top: 1vh;
+  margin-bottom: 3vh;
+  color: var(--navigation-blue-navigation-border, #6f7a8f);
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+.giveMoreKudos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
+
+.median-span {
+  margin-right: 10px;
+}
+
+.give-kleos-button {
+  flex: 1;
+  font-size: 16px;
+}

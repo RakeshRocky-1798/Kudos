@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-variant-ligatures: no-common-ligatures;
+  font-family: 'Navi Body' !important;
+}
+
+body {
+  margin: 0 auto;
+  overflow-x: hidden;
+  position: relative;
+  background: linear-gradient(
+      to bottom right,
+      rgba(38, 199, 144, 0.3),
+      rgba(255, 255, 255, 0.7) 50%,
+      rgba(0, 0, 255, 0.3)
+    )
+    30% 30%;
+  background-size: 150% 150%;
+
+  /* new color variables */
+  --welcome-lottie-bg-color: #4097ff;
+}
+
+@font-face {
+  font-family: 'Navi Body';
+  font-style: normal;
+  src: url(./assets/fonts/NaviBodyVarRoman.ttf) format('truetype');
+}

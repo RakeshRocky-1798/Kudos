@@ -1,0 +1,50 @@
+.ag-header {
+  background: var(--navi-color-gray-bg-secondary);
+
+  .ag-header-cell-label {
+    font-family: var(--navi-font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.0125em;
+    color: #585757;
+  }
+}
+
+.ag-cell-value {
+  overflow: visible;
+}
+
+.ag-row {
+  z-index: 0;
+  &:hover {
+    z-index: 1;
+  }
+}
+
+.ag-row {
+  &.ag-row-focus {
+    z-index: 2;
+  }
+}
+
+.ag-root-wrapper {
+  height: 440px !important;
+  cursor: pointer !important;
+
+  .ag-center-cols-viewport {
+    overflow-x: auto !important;
+  }
+}
+
+@media screen and (max-height: 678px) {
+  .ag-root-wrapper {
+    height: 434px !important;
+  }
+}
+
+@media screen and (min-height: 1000px) {
+  .ag-root-wrapper {
+    height: 440px !important;
+  }
+}

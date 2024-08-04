@@ -1,0 +1,18 @@
+.user-details-container {
+  margin: 24px;
+  gap: 0 24px;
+}
+
+.user-details-content {
+  height: inherit;
+  border-radius: 8px;
+  border: 1px solid var(--navi-color-gray-bg-secondary);
+  background: var(--navi-color-gray-bg-primary);
+  box-shadow: 0 1px 10px 0 rgba(103, 103, 103, 0.06);
+}
+
+@media screen and (max-height: 678px) {
+  .user-details-container {
+    height: 624px;
+  }
+}

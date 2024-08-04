@@ -1,0 +1,17 @@
+dist/*
+
+/node_modules
+/.pnp
+.pnp.js
+
+/build
+/dist
+
+.DS_Store
+
+yarn-error.log*
+yarn-debug.log*
+
+config.js
+config.qa.js
+setup.template.js

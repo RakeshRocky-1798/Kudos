@@ -1,0 +1,28 @@
+.page-content-container {
+  height: 100%;
+  overflow: auto;
+  transition: all ease-out 0.5s;
+}
+
+.header {
+  display: inline-flex;
+  gap: 16px;
+  align-items: center;
+  min-width: max-content;
+}
+
+.dialog-content {
+  margin: 24px 0px;
+}
+
+.expanded-page-content {
+  margin-left: 196px;
+  transition: all ease-out 0.5s;
+}
+
+.platform-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 8px;
+}

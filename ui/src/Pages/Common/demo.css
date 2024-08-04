@@ -1,0 +1,6 @@
+.ant-select-dropdown
+  ant-select-dropdown-hidden
+  css-dev-only-do-not-override-2i2tap
+  ant-select-dropdown-placement-bottomLeft {
+  z-index: 100000000000;
+}

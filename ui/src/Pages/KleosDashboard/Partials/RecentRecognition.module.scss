@@ -1,0 +1,122 @@
+.recent-recognition-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-y: scroll;
+  height: calc(100% - 16px);
+  overflow-x: hidden;
+}
+
+.myDivs {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.myInfoWrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.givenTypo {
+  color: var(--navi-color-gray-c2);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: -0.175px;
+  margin-bottom: 10px;
+}
+
+.imageWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 8px;
+  margin-top: 10px;
+}
+
+.imgColor {
+  width: 36px;
+  height: 30px;
+}
+
+.typoWrap {
+  margin-top: 5%;
+  margin-left: 3%;
+}
+
+.receivedTypo {
+  color: var(--navi-color-gray-c3);
+  text-align: center;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.175px;
+}
+
+.div2 {
+  flex: 1;
+}
+
+.div3 {
+  flex: 1;
+}
+
+.div4 {
+  flex: 1;
+}
+
+.Typography {
+  color: var(--grayscale-content-1, #1c1c1c);
+  font-family: Navi Body Var Roman;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; /* 125% */
+  letter-spacing: -0.4px;
+}
+
+.recent-recognition-container {
+  margin-top: 14px;
+  border-bottom: 2px solid var(--navi-color-blue-bg);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.recent-recognition-tag-wrapper {
+  margin: 12px 0 12px;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+
+  &--user-data {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+.recent-recognition-user {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@media screen and (max-height: 678px) {
+  .recent-recognition-user {
+    max-width: 70px;
+  }
+}
+
+.kudos-received-message {
+  word-break: break-word;
+}

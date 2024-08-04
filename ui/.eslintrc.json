@@ -1,0 +1,94 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint", "react-hooks", "prettier", "import"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx", ".d.ts"]
+      },
+      "typescript": {}
+    }
+  },
+  "rules": {
+    "@typescript-eslint/ban-ts-comment" :"warn",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/no-array-index-key": "warn",
+    "react-hooks/rules-of-hooks": "error",
+    "no-console": "warn",
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/member-delimiter-style": "warn",
+    "@typescript-eslint/ban-types": "warn",
+    "@typescript-eslint/type-annotation-spacing": "warn",
+    "@typescript-eslint/no-inferrable-types": "warn",
+    "@typescript-eslint/no-empty-interface": "warn",
+    "@typescript-eslint/no-empty-function": "warn",
+    "@typescript-eslint/no-var-requires": "warn",
+    "import/extension": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
+    "no-shadow": "off",
+    "import/prefer-default-export": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/destructuring-assignment": "warn",
+    "jsx-a11y/control-has-associated-label": "off",
+    "no-unused-vars": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "max-classes-per-file": "off",
+    "react/no-unused-prop-types": "warn",
+    "react/forbid-prop-types": "warn",
+    "react/jsx-no-bind": "off",
+    "react/default-props-match-prop-types": "warn",
+    "react/prop-types": "warn",
+    "import/no-named-default": "off",
+    "react/require-default-props": "off",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "padded-blocks": "off"
+  },
+  "overrides" : [
+    {
+      // enable the rule specifically for TypeScript files
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "@typescript-eslint/explicit-function-return-type": "error"
+      }
+    }
+  ]
+}

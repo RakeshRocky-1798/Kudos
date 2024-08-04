@@ -1,0 +1,16 @@
+.admin-board-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.empty-admin-board {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(202, 202, 202, 0.25);
+  backdrop-filter: blur(10px);
+  height: calc(100vh - 32vh);
+  border-radius: 12px;
+}
